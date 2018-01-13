@@ -3,18 +3,29 @@
     "version": "1.0.0",
     "main": "server.js",
     "engines": {
-        "node": "9.4.0",
+        "node": "8.9.4",
         "npm": "5.6.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
+        "start": "node server.js",
+        "devEnv": "nodemon server.js"
     },
     "author": "wb",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.16.2"
+        "express": "^4.16.2",
+        "heroku": "^0.2.0",
+        "passport": "^0.4.0",
+        "passport-google-oauth20": "^1.0.0"
     },
     "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wb1098/survey_app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wb1098/survey_app/issues"
+    },
+    "homepage": "https://github.com/wb1098/survey_app#readme",
     "description": ""
 }

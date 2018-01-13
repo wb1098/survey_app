@@ -1,22 +1,17 @@
 const express = require('express');
+require('./public/services/passport');
+
+
 const app = express();
+require('./public/routes/authRoutes')(app);
+
 
 var currentPort;
 if (process.env.ENVIRONMENT === 'local') {
-    currentPort = 8080;
+    currentPort = 5000;
 } else {
     currentPort = process.env.PORT;
 }
-
-app.use(express.static('./public'));
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/public/html/index.html');
-})
-
-app.use((function (req, res) {
-    res.sendStatus(404);
-}))
 
 var server = app.listen(currentPort, function () {
     console.log('Express server listening on port %s.', currentPort);
