@@ -7,4 +7,10 @@ html {
 
 body {
     background-color: aquamarine;
+
+}
+
+p {
+    background-color: aquamarine;
+    width: 90%;
 }

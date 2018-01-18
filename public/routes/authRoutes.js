@@ -6,8 +6,6 @@ module.exports = (app) => {
         scope: ['profile', 'email']
     }))
 
-
-
     app.get('/auth/google/callback',
         passport.authenticate('google', {
             failureRedirect: '/login'
@@ -17,13 +15,25 @@ module.exports = (app) => {
             res.redirect('/');
         });
 
+    app.get('/api/logout', (req, res) => {
+        req.logout();
+        res.send('You have logged out');
+    });
+
+    app.get('/api/current_user', (req, res) => {
+        res.send(req.user);
+    });
+
 
     app.get('/', function (req, res) {
-        res.sendFile(__dirname + '/public/html/index.html');
-    })
+        res.sendFile('/public/html/index.html', {
+            root: './'
+        });
+    });
+
 
     app.use((function (req, res) {
         res.sendStatus(404);
-    }))
+    }));
 
 }

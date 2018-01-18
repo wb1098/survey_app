@@ -13,8 +13,11 @@
     "author": "wb",
     "license": "ISC",
     "dependencies": {
+        "cookie-session": "^2.0.0-beta.3",
         "express": "^4.16.2",
         "heroku": "^0.2.0",
+        "mongodb-promise": "0.0.4",
+        "mongoose": "^4.13.9",
         "passport": "^0.4.0",
         "passport-google-oauth20": "^1.0.0"
     },
