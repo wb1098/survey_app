@@ -12,15 +12,15 @@ module.exports = (app) => {
         }),
         function (req, res) {
             // Successful authentication, redirect home.
-            res.redirect('/');
+            res.redirect('/surveys');
         });
 
-    app.get('/api/logout', (req, res) => {
+    app.get('/api/logout', (req, res) => {        
         req.logout();
-        res.send('You have logged out');
+        res.redirect('/');
     });
 
-    app.get('/api/current_user', (req, res) => {
+    app.get('/api/current_user', (req, res) => {        
         res.send(req.user);
     });
 
