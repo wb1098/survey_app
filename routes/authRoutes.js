@@ -22,30 +22,6 @@ module.exports = (app) => {
     app.get('/api/current_user', (req, res) => {        
         res.send(req.user);
     });
-    
 
-    app.get('/', function (req, res) {
-        res.sendFile('/public/html/index.html', {
-            root: './'
-        });
-    });
-   
-    
-//====================    
-//        app.post('/api/stripe', (req,res) => {
-//        
-//      if(req.body){
-//        console.log('auth', 'auth 14');
-//    }
-//
-//        console.log(req.body)  
-//        res.send('Working');
-//    });
-
-    
-    
-//    app.use((function (req, res) {
-//        res.sendStatus(404);
-//    }));
 
 }

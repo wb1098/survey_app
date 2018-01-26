@@ -1,6 +1,6 @@
-const keys = require('../../config/keys');
+const keys = require('../config/keys');
 const stripe = require('stripe')(keys.stripeSecretKey);
-const requireLogin = require('../../middlewares/requireLogin');
+const requireLogin = require('../middlewares/requireLogin');
 
 console.log('billingRoutes is here');
 
@@ -19,9 +19,6 @@ module.exports = app => {
         req.user.credits += 5;        
         const user = await req.user.save();        
         res.send(user);
-        
-        
-        
     });
 };
 
