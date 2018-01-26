@@ -16,7 +16,7 @@ class Payments extends Component {
             amount={500}
             token={token => this.props.handleToken(token)}
           //  stripeKey={process.env.REACT_APP_STRIPE_KEY}
-             STRIPEKEY = {pk_test_sWBeQ1yY5Dt9MhFVq4qksk8y}
+             stripeKey = 'pk_test_sWBeQ1yY5Dt9MhFVq4qksk8y'
           > 
                 
             <button className="green btn"> Add Credits </button>      
@@ -26,5 +26,6 @@ class Payments extends Component {
         );
     };
 }
+
 
 export default connect(null, actions) (Payments);
