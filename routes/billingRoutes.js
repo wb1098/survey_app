@@ -1,9 +1,7 @@
 const keys = require('../config/keys');
-const stripe = require('stripe')(keys.stripeSecretKey);
+//var stripe = require('stripe')(keys.stripeSecretKey);
+var stripe = require('stripe')(keys.stripePublishableKey);
 const requireLogin = require('../middlewares/requireLogin');
-
-console.log('billingRoutes is here');
-
 
 module.exports = app => {
 
