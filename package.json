@@ -10,7 +10,7 @@
         "start": "node server.js",
         "devEnv": "nodemon server.js",
         "client": "npm run start --prefix client",
-        "devServer": "concurrently \"npm run devEnv\" \"npm run client\"",
+        "devServer": "concurrently \"npm run devEnv\" \"npm run client\" ",
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
     },
     "author": "wb",
@@ -21,10 +21,13 @@
         "cookie-session": "^2.0.0-beta.3",
         "express": "^4.16.2",
         "heroku": "^0.2.0",
+        "localtunnel": "^1.8.3",
+        "lodash": "^4.17.4",
         "mongodb-promise": "0.0.4",
         "mongoose": "^4.13.9",
         "passport": "^0.4.0",
         "passport-google-oauth20": "^1.0.0",
+        "path-parser": "^3.0.1",
         "sendgrid": "^5.2.3",
         "stripe": "^5.4.0"
     },
