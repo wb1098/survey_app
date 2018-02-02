@@ -19,7 +19,9 @@ class Payments extends Component {
              stripeKey = 'pk_test_sWBeQ1yY5Dt9MhFVq4qksk8y'
           > 
                 
-            <button className="green btn"> Add Credits </button>      
+            <button className="green btn white-text">
+                Add Credits                
+            </button>      
           </StripeCheckout>  
             
             
