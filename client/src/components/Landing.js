@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return ( 
@@ -24,7 +25,7 @@ const Landing = () => {
         
         <h5 id="call_to_action_text"> Click the button below for information on getting feedback from your customers!</h5>
         
-        <p><a className="Teal btn white-text" href="/moreInfo" role="button">Learn more</a></p>
+        <p><Link to={'/moreInfo'} className="Teal btn white-text" role="button">Learn more</Link></p>
      </div>
     </div>
 

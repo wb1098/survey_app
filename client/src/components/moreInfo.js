@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const moreInfo = () => {
     return ( 
@@ -24,8 +25,8 @@ const moreInfo = () => {
             </div>
           </div>
         
+        <Link to={'/'} className="Teal btn white-text" role="button">Home</Link>
         
-        <a href="/" className="btn">Home</a>
         
         
     </div>
