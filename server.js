@@ -22,9 +22,12 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.get('/moreInfo',(req,res) => {res.semd('Wow')});
+
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
+//require('./routes/pageRoutes')(app);
 
 
 if(process.env.NODE_ENV === 'production'){

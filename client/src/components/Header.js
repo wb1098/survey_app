@@ -24,13 +24,16 @@ class Header extends Component {
     
     render () {        
         return (
-            <nav>
+            <nav id="header_Nav">
               <div className="blue nav-wrapper">
                 <Link 
                   to={this.props.auth ? '/surveys' : '/'}         
-                  className="left brand-logo"           
+                  className="left brand-logo"          
                  >
-                  Customer Survey App
+            <h4 id="header-logo" style ={{marginLeft :"10px"}}>
+                  Survey City 
+            </h4>
+            
                 </Link>
                  <ul className="right">
                   {this.renderContent()}

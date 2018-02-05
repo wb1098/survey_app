@@ -1,0 +1,28 @@
+body {
+    text-decoration: none;    
+}
+
+
+#content_Div{
+ font-family: fantasy   
+}
+
+#content_Div p{
+ margin-top: 5px;
+    font-weight: 600;
+}
+
+.hero_landing {
+    background-color: white;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+#call_to_action_text {
+  margin-bottom: 12px;
+}
+
+#header-logo h4{
+    text-decoration: none;
+}
+
