@@ -7,8 +7,6 @@ module.exports = {
     stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
     stripeSecretKey: process.env.STRIPE_SECRET_KEY,
     sendGridKey: process.env.SEND_GRID_KEY,
-    reDirectDomain : process.env.REDIRECT_DOMAIN
+    reDirectDomain : process.env.REDIRECT_DOMAIN 
 };
 
-
-//mongodb://prod-customersurvey:Survey2018@ds253587.mlab.com:53587/customer-survey-prod
