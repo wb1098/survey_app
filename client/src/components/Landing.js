@@ -3,19 +3,19 @@ import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return ( 
-    <div  style={{textAlign : 'center' }}>  
-        
-    <div id="content_Div">    
-        <img src="img/group_photo.jpg" alt="group cartoon" height="320px" width= "auto"     />
-        
-        <p> If your customers could all sit down in a room with you, just think of the information you could get from them.  </p>
-    </div>
+    <div  style={{textAlign : 'center' }}>         
         
       <div className="jumbotron hero_landing" style={{marginTop : '20px'}}>
         <div className="container">
         <h1 style={{fontFamily: "fantasy" }}>
           Survey City 
-        </h1>       
+        </h1>
+          <p> If your customers could all sit down in a room with you, just think of the information you could get from them.  </p>
+        
+       <div id="content_Div">    
+         <img src="img/group_photo.jpg" alt="group cartoon"/>
+       </div>        
+        
         
         <h3> Collect vital feedback from your customers! </h3>
         

@@ -10,7 +10,7 @@ const moreInfo = () => {
             <div className="card-content white-text">
               <span className="card-title"><h4>More Information about the Survey City Application</h4></span>
               <p style={{marginBottom:"10px"}}>
-        This application is made with React, Redux, Node, Express and many other open source librairies along with a whole lot of work!
+        This application is made with React, Redux, MongoDB, Mongoose, Node, Express and many other open source librairies along with a whole lot of work!
         
         If your interested in this application or the developer. 
         </p>
